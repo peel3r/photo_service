@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :photo_searches, only: [:new, :index, :create]
 
+  root :to => 'photo_searches#new'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

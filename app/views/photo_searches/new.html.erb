@@ -1,0 +1,28 @@
+<div class="container">
+  <%= form_for(@search) do |f| %>
+      <% if @search.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@search.errors.count, "error") %> prohibited this image from being saved:</h2>
+            <ul>
+              <% @search.errors.full_messages.each do |message| %>
+                  <%= message %> or<br>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div>
+        <div class="fields">
+          <%= f.label :stock_ref, :label => 'Stock Reference' %>
+          <%= f.text_field :stock_ref %>
+        </div>
+        <div class="fields">
+          <%= f.label :registration, :label => 'Registration' %>
+          <%= f.text_field :registration%>
+        </div>
+        <div class="fields"><%= f.submit   "Load Photos", :class => "btn btn-success"%>
+        </div>
+      </div>
+  <% end %>
+</div>
