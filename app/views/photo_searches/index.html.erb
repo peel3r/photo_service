@@ -1,6 +1,6 @@
 <div id="images">
   <%= content_for(:title) do%>
-      Ref: <%= @search.registration%>
+      Ref: <%= @search.stock_ref%>
   <% end %>
   <% (0..11).each do |index| %>
       <%= link_to @search.fetch_images(params[:ref])[index+12], {'data-lightbox'=> 'lightbox'} do %>
