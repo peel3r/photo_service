@@ -11,7 +11,7 @@ class PhotoSearch
   validates :registration, presence: true, length: { minimum: 7 }, allow_blank: false
   validates :stock_ref, presence: true, length: { minimum: 9 }, allow_blank: false
 
-  def initialize(stock_ref = "", registration = "" )
+  def initialize(registration = "" ,stock_ref = "")
     @stock_ref = stock_ref.strip.upcase.gsub(' ', '')
     @registration = registration.strip.upcase.gsub(' ', '')
   end

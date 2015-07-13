@@ -32,7 +32,7 @@ describe PhotoSearch do
   end
 
   describe '.obfuscated_stock_ref' do
-    subject {described_class.new( stock_ref= ' arnfa-u-4633 ',registration= ' mk5 1fdd ')}
+    subject {described_class.new( registration= ' mk5 1fdd ',stock_ref= ' arnfa-u-4633 ',)}
 
     it 'calculates reference' do
       expect(subject.obfuscated_ref).to eq('ADRDNFF1A5-KUM4')
@@ -42,7 +42,7 @@ describe PhotoSearch do
 
 
   describe 'fetch images' do
-    subject {described_class.new(stock_ref= ' arnfa-u-4633 ', registration= ' mk5 1fdd ')}
+    subject {described_class.new( registration= ' mk5 1fdd ', stock_ref= ' arnfa-u-4633 ')}
     it 'returns correct image set size' do
       expect(subject.fetch_images.size).to eq 24
 

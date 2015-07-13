@@ -17,7 +17,6 @@ class PhotoSearchesController < ApplicationController
 
 
   def index
-
     @search = PhotoSearch.new(params[:ref])
   end
 

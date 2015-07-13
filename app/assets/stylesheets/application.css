@@ -14,3 +14,102 @@
  *= require lightbox
  *= require_tree .
  */
+
+body {
+    background-color: #fffffd;
+    margin: 0px;
+    font-family: "Gotham A", "Gotham B", Gotham, Verdana, sans-serif;
+    font-size: 13px;
+    -webkit-text-size-adjust: none;
+    min-height: 100%;
+    font-weight: 400;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding: 36px 5% 36px 5%;
+}
+
+.fields {
+    padding: 10px;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 80%;
+    }
+    input[type=submit] {
+        -webkit-appearance: none;
+        height: 4em;
+    }
+}
+
+.header {
+    padding: 10px 0 6px 0;
+    width: 50%;
+    margin: 0 50%;
+    min-height: 55px;
+    border-top: 1px solid #2E3838;
+    border-bottom: 6px solid #FEDF02;
+    background: #FEDF02;
+    color: #EEE;
+}
+
+.header .x {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto ;
+    padding: 0;
+    position: relative ;
+}
+
+
+
+.content {
+    padding: 20px 20% 36px 20%;
+}
+
+.footer {
+    color: #EEE;
+    width: 50%;
+    background-color: #2D3737;
+    padding: auto;
+    overflow: hidden;
+    margin: 10px  0 0;
+    text-align: left;
+}
+
+.footer a {
+    color: #eee;
+}
+
+
+
+.footer .author {
+    background-color: #2A3131;
+    padding: 18px;
+    /*font-size: 2vw;*/
+}
+
+#images {
+    margin: 1px;
+    background-color: #2A3145;
+}
+
+.picture {
+    margin: 1px;
+    background-color: #2A3131;
+}
