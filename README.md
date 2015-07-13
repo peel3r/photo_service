@@ -49,7 +49,7 @@ App should display in user friendly manner a set of car images
 Install and run
 ---------------
 
-1. Git clone
+1. Run `git clone https://github.com/peel3r/photo_service.git`
 2. Bundle install
 3. rails s
 
