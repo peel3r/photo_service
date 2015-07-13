@@ -1,11 +1,11 @@
 # Photo Search
 
-What is the Arnold Clark Pgoto Search app?
+What is the Arnold Clark Photo Search app?
 ---------------------------------------
 
 Arnold	Clark’s	website	takes	images	of	our	used cars	from a	caching	server
 
-at http://vcache.arnoldclark.com.	 We	hold	up	to	12	images	for	any	given	vehicle	but...
+and displays to user
 
 ##The functionality
 
@@ -59,6 +59,4 @@ the registration number used for tests is `mk5 1fdd`
 the Stock Reference is `arnfa-u-4633 `
 
 live app can be seen on https://fierce-crag-6250.herokuapp.com/
-
-###To Do
 
