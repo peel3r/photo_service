@@ -4,7 +4,7 @@
   <% end %>
   <% (0..11).each do |index| %>
       <%= link_to @search.fetch_images(params[:ref])[index+12], {'data-lightbox'=> 'lightbox'} do %>
-      <%=  image_tag @search.fetch_images(params[:ref])[index], alt: 'Car Image', class: "picture", width: 170 %>
+      <%=  image_tag @search.fetch_images(params[:ref])[index], alt: 'Car Image', class: "picture", width: 177 %>
 
   <% end %>
   <% end %>

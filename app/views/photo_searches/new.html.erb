@@ -2,7 +2,7 @@
   <%= form_for(@search) do |f| %>
       <% if @search.errors.any? %>
           <div id="error_explanation">
-            <h2><%= pluralize(@search.errors.count, "error") %> prohibited this image from being saved:</h2>
+            <h2><%= pluralize(@search.errors.count, "error") %> prohibited from loading photos:</h2>
             <ul>
               <% @search.errors.full_messages.each do |message| %>
                   <%= message %> or<br>
@@ -14,14 +14,14 @@
 
       <div>
         <div class="fields">
-          <%= f.label :stock_ref, :label => 'Stock Reference' %>
+          <%= f.label :stock_reference, 'Stock Reference' %>
           <%= f.text_field :stock_ref %>
         </div>
         <div class="fields">
-          <%= f.label :registration, :label => 'Registration' %>
+          <%= f.label :registration,'Car Registration' %>
           <%= f.text_field :registration%>
         </div>
-        <div class="fields"><%= f.submit   "Load Photos", :class => "btn btn-success"%>
+        <div class="fields"><%= f.submit   "Load Photos", :class => "myButton"%>
         </div>
       </div>
   <% end %>
